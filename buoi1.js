@@ -9,3 +9,14 @@
 /*git config --global user.name "do tien anh"
 git config --global user.email "anhdt.ute@gmail.com" */
 
+// cac bước làm việc với quản
+/* git init
+tạo file mới
+git add . (lưu file mới)
+git commit -m "nội dung" (đóng gói lưu trữ cho phiên bản làm việc)
+*/
+//1. khai báo biến-- (dynamic type kiểu dữ liệu động)
+var a = 5 // có thể định nghĩa lại, không nên dùng
+let b =10 // chỉ định nghĩa 1 lần
+const c = 15 //hằng số, không được gán lại, bắt buộc có giá trị
+console.log (c)
