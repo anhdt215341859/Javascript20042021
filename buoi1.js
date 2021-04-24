@@ -85,6 +85,31 @@ git commit -m "nội dung" (đóng gói lưu trữ cho phiên bản làm việc)
 //     console.log(0)
 // }
 //biẻu thức ? true : false
-let a =8
-let b =16
-a>b ? conslose.log("A lon hon B") : conslose.log("B be hon A")
+// let a =8
+// let b =16
+// a>b ? conslose.log("A lon hon B") : conslose.log("B be hon A")
+//9 vòng lăpj
+const arrNames = ["teo","ti", "tun", "tuan"]
+for (let i = 0; i < arrNames.length;i++){
+    conslose.log(arrNames[i])
+}
+// vi du. Phương thức kiểm tra số nguyên tố
+// đúng thif in "sô nguyên tố" sai thì in" không là số nguyên tố" 
+function kiemtrasoNguyento(number) {
+    let count= 0
+    if(number<2){
+        console.log("Khong phai la so nguyen to")
+        return
+    }
+
+    for(let i=2;i <= number; i++){
+        if (number%i ==0)
+        count++;
+    }
+    if (count ==1){
+        console.log("la so nguyen to")
+
+    }
+    else {console.log("không la so nguyen to")}
+}
+kiemtrasoNguyento(5)
