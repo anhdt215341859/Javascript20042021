@@ -25,12 +25,27 @@ git commit -m "nội dung" (đóng gói lưu trữ cho phiên bản làm việc)
 //let a =1000
 //console.log (typeof a)// kiểm tra kiểu dữ liệu
 //console.log (a)
-// 3. object 
-const tienanh={
-    name:"đỗ tiến anh",
-    age:10
+// 3. object duyệt theo key
+// const tienanh={
+//     name:"đỗ tiến anh",
+//     age:10
 
-}    //mảng
-//console.log (tienanh.name)
-// cach 2
-console.log (tienanh['name'])// muốn lấy tất cả các key
+// }    //mảng
+// //console.log (tienanh.name)
+// // cach 2
+// console.log (tienanh['name'])// muốn lấy tất cả các key
+
+//4.array: duyệt theo index
+
+// const arrName =["tienanh",'ti','tun']
+// console.log(arrName[0])
+//5 operator -toán tử
+let a=5
+let b=10
+let c= a++ - b++ - --a - --b + --b - --a +a-- + b--
+// c= 5 - 10 (a=6, b=11)
+// c=5-10-5-10
+// c=5-10-5-10
+
+console.log(a,b,c)// sau khi chạy lệnh xong, a và b sẽ được gán lại giá trị sau cùng
+
