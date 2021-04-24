@@ -60,11 +60,31 @@ git commit -m "nội dung" (đóng gói lưu trữ cho phiên bản làm việc)
 // conslose.log(ketQua)
 
 //7 object method
-const teo = {
-    name:"nguyễn văn tèo",
-    age:10,
-    showInfo : function(){
-        consle.log("ten: " + this.name + " , tuoi:" + this.age)
-    }
-}
-teo.showInfo()
+// const teo = {
+//     name:"nguyễn văn tèo",
+//     age:10,
+//     showInfo : function(){
+//         consle.log("ten: " + this.name + " , tuoi:" + this.age)
+//     }
+// }
+// teo.showInfo()
+//8 phép so sánh
+// có 6 giá trị= false: false, null, '', NaN, undifined, rỗng 
+// let a=10
+// let b=10
+// // toán tử 3 ngôi
+
+// if (a>b)
+//     {
+//         console.log(1)
+//     }
+// else if (a<b) {
+//     console.log(-1)
+// }    
+// else {
+//     console.log(0)
+// }
+//biẻu thức ? true : false
+let a =8
+let b =16
+a>b ? conslose.log("A lon hon B") : conslose.log("B be hon A")
