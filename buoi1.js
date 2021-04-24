@@ -16,7 +16,21 @@ git add . (lưu file mới)
 git commit -m "nội dung" (đóng gói lưu trữ cho phiên bản làm việc)
 */
 //1. khai báo biến-- (dynamic type kiểu dữ liệu động)
-var a = 5 // có thể định nghĩa lại, không nên dùng
-let b =10 // chỉ định nghĩa 1 lần
-const c = 15 //hằng số, không được gán lại, bắt buộc có giá trị
-console.log (c)
+//var a = 5 // có thể định nghĩa lại, không nên dùng
+//let b =10 // chỉ định nghĩa 1 lần
+//const c = 15 //hằng số, không được gán lại, bắt buộc có giá trị
+//console.log (c)
+
+//2. kiu du lieu
+//let a =1000
+//console.log (typeof a)// kiểm tra kiểu dữ liệu
+//console.log (a)
+// 3. object 
+const tienanh={
+    name:"đỗ tiến anh",
+    age:10
+
+}    //mảng
+//console.log (tienanh.name)
+// cach 2
+console.log (tienanh['name'])// muốn lấy tất cả các key
