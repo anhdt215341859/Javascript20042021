@@ -40,12 +40,22 @@ git commit -m "nội dung" (đóng gói lưu trữ cho phiên bản làm việc)
 // const arrName =["tienanh",'ti','tun']
 // console.log(arrName[0])
 //5 operator -toán tử
-let a=5
-let b=10
-let c= a++ - b++ - --a - --b + --b - --a +a-- + b--
-// c= 5 - 10 (a=6, b=11)
-// c=5-10-5-10
-// c=5-10-5-10
+// let a=5
+// let b=10
+// let c= a++ - b++ - --a - --b + --b - --a +a-- + b--
+// // c= 5 - 10 (a=6, b=11)
+// // c=5-10-5-10
+// // c=5-10-5-10
 
-console.log(a,b,c)// sau khi chạy lệnh xong, a và b sẽ được gán lại giá trị sau cùng
+// console.log(a,b,c)// sau khi chạy lệnh xong, a và b sẽ được gán lại giá trị sau cùng
+//6 fuction-- phương thức chương trình con
+function showName(name){
+    console.log(name)
+}
+function tinhTong(a,b){
+    return a+b
+}
+//conslose.log(showName("teo"))
+const ketQua = tinhTong(8,4)
+conslose.log(ketQua)
 
