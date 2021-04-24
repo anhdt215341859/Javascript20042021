@@ -49,13 +49,22 @@ git commit -m "nội dung" (đóng gói lưu trữ cho phiên bản làm việc)
 
 // console.log(a,b,c)// sau khi chạy lệnh xong, a và b sẽ được gán lại giá trị sau cùng
 //6 fuction-- phương thức chương trình con
-function showName(name){
-    console.log(name)
-}
-function tinhTong(a,b){
-    return a+b
-}
-//conslose.log(showName("teo"))
-const ketQua = tinhTong(8,4)
-conslose.log(ketQua)
+// function showName(name){
+//     console.log(name)
+// }
+// function tinhTong(a,b){
+//     return a+b
+// }
+// //conslose.log(showName("teo"))
+// const ketQua = tinhTong(8,4)
+// conslose.log(ketQua)
 
+//7 object method
+const teo = {
+    name:"nguyễn văn tèo",
+    age:10,
+    showInfo : function(){
+        consle.log("ten: " + this.name + " , tuoi:" + this.age)
+    }
+}
+teo.showInfo()
