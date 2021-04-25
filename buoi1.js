@@ -95,21 +95,38 @@ git commit -m "nội dung" (đóng gói lưu trữ cho phiên bản làm việc)
 // }
 // vi du. Phương thức kiểm tra số nguyên tố
 // đúng thif in "sô nguyên tố" sai thì in" không là số nguyên tố" 
-function kiemtrasoNguyento(number) {
-    let count= 0
-    if(number<2){
-        console.log("Khong phai la so nguyen to")
-        return
-    }
+// function kiemtrasoNguyento(number) {
+//     let count= 0
+//     if(number<2){
+//         console.log("Khong phai la so nguyen to")
+//         return
+//     }
 
-    for(let i=2;i <= number; i++){
-        if (number%i ==0)
-        count++;
-    }
-    if (count ==1){
-        console.log("la so nguyen to")
+//     for(let i=2;i <= number; i++){
+//         if (number%i ==0)
+//         count++;
+//     }
+//     if (count ==1){
+//         console.log("la so nguyen to")
 
-    }
-    else {console.log("không la so nguyen to")}
+//     }
+//     else {console.log("không la so nguyen to")}
+// }
+// kiemtrasoNguyento(0)
+//     var name;
+//     var age;
+
+// var listAnimal = {
+//      dv1: {name= 'cat', age = 2 },
+//      dv2: {name= 'dog', age = 3},
+//      dv3: {name= 'pig', age = 4},
+// };
+// console.log(dv1.name);
+// //document.getElementById("demo").innerHTML = text;
+
+const tienanh = {
+    name="dotienanh",
+    age= 24,
+    smart= true,
 }
-kiemtrasoNguyento(0)
+console.log(tienanh.smart)

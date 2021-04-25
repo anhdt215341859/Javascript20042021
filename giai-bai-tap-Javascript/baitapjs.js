@@ -13,15 +13,19 @@
 // console.log(a,b,c,d)
 
 // bài 2 - kiểu dữ liệu
-var name = 'Đỗ Tiến Anh'
-var age = 25
-var manymoney = false
-var thoitiet = {
-    temp = 30, 
-    rain = false,
-    location = 'tan binh, sai gon, viet nam',
-}
-console.log(thoitiet.location)
+// var name = 'Đỗ Tiến Anh'
+// var age = 25
+// var manymoney = false
+// var thoitiet = {
+//     temp = 30, 
+//     rain = false,
+//     location = 'tan binh, sai gon, viet nam',
+// }
+// console.log(thoitiet.location)
+
+//bài 4 arraylist : danh sách mảng
+// khai báo mảng chứa các object mô tả danh sách các loài vật
+
 // function kiemtrasoNguyento(number) {
 //     let count= 0
 //     if(number<2){
