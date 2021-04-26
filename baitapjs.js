@@ -1,3 +1,4 @@
+
 // bài 1
 // khai báo biến
 // let x = 8
@@ -25,6 +26,31 @@
 
 //bài 4 arraylist : danh sách mảng
 // khai báo mảng chứa các object mô tả danh sách các loài vật
+//     var listAnimal = {
+//         dv1: {name='cat', age= 2 },
+//         dv2: {name= 'dog', age=3},
+//         dv3: {name='pig', age=4},
+//     };
+// listAnimal.length
+// console.log(listAnimal.length - 1)
+
+//bài 5: toán tử
+// tính chu vi, diện tích hình chữ nhật
+let width = 10;
+let height = 20;
+let s
+let p
+s = width * height;// diện tích
+p = (width + height) * 2;// chu vi
+conslose.log(p)
+// tính chu vi, diện tích hình tròn
+
+// const pi=3.14
+// let x 
+// let s = x * x * pi
+// let p = 2 * x * pi
+
+//bài 6: phép tính tăng giảm
 
 // function kiemtrasoNguyento(number) {
 //     let count= 0
