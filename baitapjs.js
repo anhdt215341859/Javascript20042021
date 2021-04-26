@@ -42,7 +42,7 @@ let s
 let p
 s = width * height;// diện tích
 p = (width + height) * 2;// chu vi
-conslose.log(p)
+console.log(p)
 // tính chu vi, diện tích hình tròn
 
 // const pi=3.14
