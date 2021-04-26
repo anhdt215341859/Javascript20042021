@@ -54,13 +54,21 @@
     // var a = 10
     // var x = --a + a++ // x = 9 + 11
     // console.log(x)
-    var a = 10
-    var b = 18
-    var x = a-- + b++ - ++b - ++a
-    //  x = 9 + 19 - ++b - ++a
-    //  x = 9 + 19 - 19 - 11
-    // lưu ý, --a hoặc ++a, thì tính rồi lưu số a lại để thực hiện phép tính tiếp theo
+    // var a = 10
+    // var b = 18
+    // var x = a-- + b++ - ++b - ++a
+    // //  x = 9 + 19 - ++b - ++a
+    // //  x = 9 + 19 - 19 - 11
+    // // lưu ý, --a hoặc ++a, thì tính rồi lưu số a lại để thực hiện phép tính tiếp theo
+    // console.log(x)
+
+    // bài 7 - phép gán
+    var a = 10;
+    // viết tất cả phép gán được học để gấp đôi số a
+    var x = a*2;
+    var y = a + a;
     console.log(x)
+
 // function kiemtrasoNguyento(number) {
 //     let count= 0
 //     if(number<2){
