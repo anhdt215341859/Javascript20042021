@@ -36,13 +36,13 @@
 
 //bài 5: toán tử
 // tính chu vi, diện tích hình chữ nhật
-let width = 10;
-let height = 20;
-let s
-let p
-s = width * height;// diện tích
-p = (width + height) * 2;// chu vi
-console.log(p)
+// let width = 10;
+// let height = 20;
+// let s
+// let p
+// s = width * height;// diện tích
+// p = (width + height) * 2;// chu vi
+// console.log(p)
 // tính chu vi, diện tích hình tròn
 
 // const pi=3.14
@@ -51,7 +51,16 @@ console.log(p)
 // let p = 2 * x * pi
 
 //bài 6: phép tính tăng giảm
-
+    // var a = 10
+    // var x = --a + a++ // x = 9 + 11
+    // console.log(x)
+    var a = 10
+    var b = 18
+    var x = a-- + b++ - ++b - ++a
+    //  x = 9 + 19 - ++b - ++a
+    //  x = 9 + 19 - 19 - 11
+    // lưu ý, --a hoặc ++a, thì tính rồi lưu số a lại để thực hiện phép tính tiếp theo
+    console.log(x)
 // function kiemtrasoNguyento(number) {
 //     let count= 0
 //     if(number<2){
