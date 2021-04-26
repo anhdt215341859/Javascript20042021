@@ -62,13 +62,35 @@
     // // lưu ý, --a hoặc ++a, thì tính rồi lưu số a lại để thực hiện phép tính tiếp theo
     // console.log(x)
 
-    // bài 7 - phép gán
-    var a = 10;
-    // viết tất cả phép gán được học để gấp đôi số a
-    var x = a*2;
-    var y = a + a;
-    console.log(x)
+    // // bài 7 - phép gán
+    // var a = 10;
+    // // viết tất cả phép gán được học để gấp đôi số a
+    // var x = a*2;
+    // var y = a + a;
+    // console.log(x)
 
+    // bài 8 - FUNCTION
+
+    // Bài tập: Viết hàm tính thể tích khối hộp.
+// Nhận vào các tham số như dưới, trả về thể tích của khối hộp.
+
+//
+ //* Tính thể tích khối hộp
+ //* https://www.wikihow.com/Calculate-Volume-of-a-Box
+  let w //Chiều rộng
+  let h //Chiều cao
+  let l //Chiều dài
+// @returns {Number} Diện tích
+//
+function getBoxVolume(w, h, l) {
+    // Viết code ở đây
+    let v = w * h * l;
+    console.log(v);
+  }
+
+  console.log(getBoxVolume(11.5, 20.1, 30)); // 6000
+  console.log(getBoxVolume(4, 5, 6)); // 120
+  
 // function kiemtrasoNguyento(number) {
 //     let count= 0
 //     if(number<2){
