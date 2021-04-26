@@ -77,20 +77,56 @@
 //
  //* Tính thể tích khối hộp
  //* https://www.wikihow.com/Calculate-Volume-of-a-Box
-  let w //Chiều rộng
-  let h //Chiều cao
-  let l //Chiều dài
-// @returns {Number} Diện tích
-//
-function getBoxVolume(w, h, l) {
-    // Viết code ở đây
-    let v = w * h * l;
-    console.log(v);
-  }
+//   let w //Chiều rộng
+//   let h //Chiều cao
+//   let l //Chiều dài
+// // @returns {Number} Diện tích
+// //
+// function getBoxVolume(w, h, l) {
+//     // Viết code ở đây
+//     let v = w * h * l;
+//     console.log(v);
+//   }
 
-  console.log(getBoxVolume(11.5, 20.1, 30)); // 6000
-  console.log(getBoxVolume(4, 5, 6)); // 120
+//   console.log(getBoxVolume(11.5, 20.1, 30)); // 6000
+//   console.log(getBoxVolume(4, 5, 6)); // 120
   
+// bài 9 - object method 
+/**
+ * Khai báo biến `rectangle` là 1 object gồm có các property:
+ * - width: chiều rộng, là 1 số bất kì
+ * - height: chiều cao, là 1 số bất kì
+ * Viết các method:
+ * - getWidth: trả về chiều rộng
+ * - getHeight: trả về chiều cao
+ * - getArea: trả về diện tích
+ */
+var rectangle = { 
+  width: 5, 
+  height : 10, 
+  area = (width * height),
+    getWidth : function () {
+      console.log("chiều rộng là: " + this.width)
+    },
+    getHeight : function () {
+      console.log("chiều cao là: " + this.height)
+    },
+    getArea : function () {
+      //return (this.width * this.height);
+      console.log("diện tích là: " + this.area)
+    },
+};
+rectangle.getWidth()
+rectangle.getHeight()
+rectangle.getArea()
+//  const teo = {
+//       name:"nguyễn văn tèo",
+//       age:10,
+//       showInfo : function(){
+//           console.log("ten: " + this.name + " , tuoi:" + this.age)
+//       }
+//   }
+//   teo.showInfo()
 // function kiemtrasoNguyento(number) {
 //     let count= 0
 //     if(number<2){
