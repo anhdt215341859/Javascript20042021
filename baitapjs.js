@@ -166,15 +166,38 @@
 //  var a = [1, 2, 4, 8, 16];
 //  a.reverse();
 //  console.log(a.length);
-var a = [1, 2, 4, 8, 16];
-let object = []
-for (let i = a.length - 1; i >= 0; i--){
-    object = object + a[i] + ",";
-    
-}
-console.log(object);
+// var a = [1, 2, 4, 8, 16];
+// let object = []
+// for (let i = a.length - 1; i >= 0; i--){
+//     object = object + a[i] + ",";  
+// }
+// console.log(object);
 
-
+//Ví dụ
+// var a = [1, 2, 3, 4, 5];
+// var b = [10, 20, 30];
+/**
+ * Sử dụng vòng lặp for để tính tích của các phần tử của array a với các phần tử của array b Kết quả mong muốn:
+ * 10
+ * 20
+ * 30
+ * ...
+ * 20
+ * 40
+ * 60
+ * ...
+ * Gợi ý: Dùng nested for loops (các vòng lặp lồng nhau)
+ */
+ var a = [1, 2, 3, 4, 5];
+ var b = [10, 20, 30];
+ let array= []; let c;
+ for (var j=0; j<b.length; j++){
+     for (var i=0; i<a.length; i++){
+         c= a[i] * b[j];
+         array= array + c + "; ";
+     }
+ }
+ console.log(array)
 // function kiemtrasoNguyento(number) {
 //     let count= 0
 //     if(number<2){
