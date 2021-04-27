@@ -109,9 +109,19 @@
 // Ví dụ 
 // remove 3 giá trị cuối cùng
 
-function removeEnd(arr, n) {
-	arr.splice(arr.length -1 - n, n)
-    return arr
+// function removeEnd(arr, n) {
+// 	arr.splice(arr.length -1 - n, n)
+//     return arr
+// }
+
+// console.log(removeEnd([2, 3, 1, 8, 9, 7], 3));
+//Ví dụ
+
+//Viết hàm JavaScript để lấy phần tử đầu tiên của mảng. Truyền tham số 'n' sẽ trả về các phần tử 'n' đầu tiên của mảng
+
+function first(arr, n) {
+  return arr.slice(0,n)// hàm slice tạo 1 mảng mới( vị trí lấy, số lượng lấy)
 }
 
-console.log(removeEnd([2, 3, 1, 8, 9, 7], 3));
+console.log(first([1, 2, 3, 4, 5,6, 7, 8, 9], 7)); // expect [1, 2]
+
