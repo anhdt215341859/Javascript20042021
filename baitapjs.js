@@ -124,22 +124,22 @@
 
 // Ví dụ:
 
-var a = [1, 2];//[1, 2];
-var b = [1, 2];//[1, 2];
-console.log(a === b);
-// Chạy chương trình và tìm hiểu vì sao kết quả lại là false mặc dù giá trị của 2 array có vẻ giống nhau. Viết câu trả lời ở dưới đây.
+// var a = [1, 2];//[1, 2];
+// var b = [1, 2];//[1, 2];
+// console.log(a === b);
+// // Chạy chương trình và tìm hiểu vì sao kết quả lại là false mặc dù giá trị của 2 array có vẻ giống nhau. Viết câu trả lời ở dưới đây.
 // === vừa so sánh giá trị vừa so sánh kiểu dữ liệu
 // Ví dụ:
 
-var a = {
-  foo: 3
-};
+// var a = {
+//   foo: 'bar'
+// };
 
-var b = {
-  foo: 3
-};
+// var b = {
+//   foo: 'bar'
+// };
 
-console.log(a = b);
+// console.log(a === b);
 // // Chạy chương trình và tìm hiểu vì sao kết quả lại là false mặc dù giá trị của 2 object có vẻ giống nhau. Viết câu trả lời ở dưới đây.
 
 // Ví dụ : 
@@ -150,6 +150,31 @@ console.log(a = b);
 // console.log(x > y);
 // Chạy chương trình và tìm hiểu vì sao kết quả lại là false mặc dù 1000 trông có vẻ lớn hơn 200. Viết câu trả lời ở dưới đây.
 // so sánh kiểu biến trước, giá trị sau: kiểu biến đều là string, nên k so sánh giá trị => kết quả trả về là false
+
+// 11 – Vòng lặp
+
+// Ví dụ
+// var a = [1, 2, 4, 8, 16];
+/**
+ * Sử dụng vòng lặp for để hiển thị ra màn hình các phần tử của mảng a theo thứ tự ngược lại:
+ * 16
+ * 8
+ * 4
+ * 2
+ * 1
+ */
+//  var a = [1, 2, 4, 8, 16];
+//  a.reverse();
+//  console.log(a.length);
+var a = [1, 2, 4, 8, 16];
+let object = []
+for (let i = a.length - 1; i >= 0; i--){
+    object = object + a[i] + ",";
+    
+}
+console.log(object);
+
+
 // function kiemtrasoNguyento(number) {
 //     let count= 0
 //     if(number<2){
