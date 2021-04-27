@@ -204,17 +204,27 @@
  * Viết function trả về tích các số từ start đến end, không tính end 
  * Ví dụ: console.log(calculate(2, 5)) sẽ hiển thị ra màn hình 24 (vì 2 * 3 * 4 = 24)
  */
-let start
-let end
-function calculate(start, end) {
-    let mod = 1 
-    for (let i = start; i< end; i++) {
-        mod = mod * i;
-        
-    }
-    console.log(mod)
-}
-console.log(calculate(6, 9))  
+// let start
+// let end
+// function calculate(start, end) {
+//     let mod = 1 
+// if (start<end)    
+//     {
+//         for (let i = start; i< end; i++) {
+//         mod = mod * i;  
+//     }
+//     console.log(mod)
+//     }
+// else if (start = end)
+//     {
+//     console.log(start)
+//     }
+// else
+//     { 
+//     console.log ("hãy nhập lại số start < end");
+//     }
+// }
+// console.log(calculate(1, 4))  
 
 // function kiemtrasoNguyento(number) {
 //     let count= 0
@@ -234,3 +244,21 @@ console.log(calculate(6, 9))
 //     else {console.log("không la so nguyen to")}
 // }
 // kiemtrasoNguyento(0)
+
+// 12 – For in , for of
+
+
+
+// Ví dụ
+/**
+ * Sử dụng vòng lặp for...of để tính tích của các phần tử trong một array gồm các số
+ */
+//var arr=[];
+function multiply(arr) {
+    let mod = 1;
+    for( let x of arr ) {
+        mod *=x;
+    }
+}
+
+console.log(multiply([2, 3, 4])); // expect: 24
