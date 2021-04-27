@@ -188,16 +188,34 @@
  * ...
  * Gợi ý: Dùng nested for loops (các vòng lặp lồng nhau)
  */
- var a = [1, 2, 3, 4, 5];
- var b = [10, 20, 30];
- let array= []; let c;
- for (var j=0; j<b.length; j++){
-     for (var i=0; i<a.length; i++){
-         c= a[i] * b[j];
-         array= array + c + "; ";
-     }
- }
- console.log(array)
+//  var a = [1, 2, 3, 4, 5];
+//  var b = [10, 20, 30];
+//  let array= []; let c;
+//  for (var j=0; j<b.length; j++){
+//      for (var i=0; i<a.length; i++){
+//          c= a[i] * b[j];
+//          array= array + c + "; ";
+//      }
+//  }
+//  console.log(array)
+
+ //Ví dụ
+/**
+ * Viết function trả về tích các số từ start đến end, không tính end 
+ * Ví dụ: console.log(calculate(2, 5)) sẽ hiển thị ra màn hình 24 (vì 2 * 3 * 4 = 24)
+ */
+let start
+let end
+function calculate(start, end) {
+    let mod = 1 
+    for (let i = start; i< end; i++) {
+        mod = mod * i;
+        
+    }
+    console.log(mod)
+}
+console.log(calculate(6, 9))  
+
 // function kiemtrasoNguyento(number) {
 //     let count= 0
 //     if(number<2){
