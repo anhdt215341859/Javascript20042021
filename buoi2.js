@@ -44,31 +44,31 @@
  * Gợi ý: đây là bài tập khó, bạn nên tìm hiểu về recursive trước
  */
 
- var apartment = {
-    bedroom: {
-      area: 20,
-      bed: {
-        type: 'twin-bed',
-        price: 100
-      }
-    }
-  };
+//  var apartment = {
+//     bedroom: {
+//       area: 20,
+//       bed: {
+//         type: 'twin-bed',
+//         price: 100
+//       }
+//     }
+//   };
   
-  function getkey(object){
-      for(const key in object){
-          console.log(key);
-          for (const keyBedroom in object[key]) {
-              console.log(keyBedroom)
-              for (const keyBed in object[key][keyBedRoom]){
-                  console.log(keyBed)
-              }
+//   function getkey(object){
+//       for(const key in object){
+//           console.log(key);
+//           for (const keyBedroom in object[key]) {
+//               console.log(keyBedroom)
+//               for (const keyBed in object[key][keyBedRoom]){
+//                   console.log(keyBed)
+//               }
                    
-              }
-          }
-      }
+//               }
+//           }
+//       }
   
   
-  getkey(apartment)
+//   getkey(apartment)
   
   /**
    * Kết quả mong muốn:
@@ -80,12 +80,35 @@
    * Chú ý: không cần hiển thị ra đúng thứ tự như trên
    */
        
- function getkey(object){
-     for (const key in object) {
-         console.log(key)
-         if (typeof object[key]=== 'object') {
-            getkey(object[key])
+//  function getkey(object){
+//      for (const key in object) {
+//          console.log(key)
+//          if (typeof object[key]=== 'object') {
+//             getkey(object[key])
              
-         }
-     }
- } 
+//          }
+//      }
+//  } 
+ // 13 – Array method
+
+const arrNumbers = [1,2,3,4,5]
+// thêm phần tử cuối mảng
+//arrNumbers.push(11)
+// xoá phần tử cuối mảng
+//arrNumbers.pop()
+//thêm phần tử đầu
+//arrNumbers.unshift(113)
+// xoá phần tử đầu
+//arrNumbers.shift()
+// xoá phần tử ở giữa
+//arrNumbers.splice(1,4) // 1: vị trí xoá, 4: sô lượng xoá
+// thêm phần tử ở giữa
+arrNumbers.splice(1,0, 3,4,5,6,7,8,9,10,11) // 1: vị trí xoá, vị trí 2: sô lượng xoá( ở đây là 0), từ vị trí 3 trở đi là thêm phần tử
+console.log(arrNumbers)
+// Ví dụ 
+// remove 3 giá trị cuối cùng
+// function removeEnd(arr, n) {
+	
+// }
+
+// console.log(removeEnd([2, 3, 1, 8, 9, 7], 3));
