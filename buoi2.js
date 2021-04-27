@@ -126,14 +126,37 @@
 // console.log(first([1, 2, 3, 4, 5,6, 7, 8, 9], 7)); // expect [1, 2]
 // 13 higher order function
 
-function nhan2(number){
-    return number*2
-}
-function tinhTong(arr, func){
-    let result = 0
-    for (const value of arr){
-        result += value
+// function nhan2(number){
+//     return number*2
+// }
+// function tinhTong(arr, func){
+//     let result = 0
+//     for (const value of arr){
+//         result += value
+//     }
+//     return func(result)
+// }
+// console.log(tinhTong([1,2],nhan2))
+
+/**
+ * 1. Viết hàm transform nhận vào 1 array gồm các số và 1 function callback. Nội dung của hàm bao gồm:
+ * - Khai báo 1 biến result có giá trị là 1 empty array
+ * - Lặp qua từng phần tử trong array, với mỗi phần tử, gọi hàm callback và truyền vào phần tử đó, được kết quả bao nhiêu thì push vào array khai báo ở trên
+ * - Trả về result array
+ */
+ function transform(numbers, callback) {
+    const neeArr=[]
+    for (const value of numbers){
+        neeArr.push(callback(value))
+    } 
+    return neeArr
     }
-    return func(result)
-}
-console.log(tinhTong([1,2],nhan2))
+    
+    function double(num) {
+      return num * 2;
+    }
+    
+    var output = transform([2, 4, 6], double);
+    console.log(output);
+    // Expect: [4, 8, 12]
+    
