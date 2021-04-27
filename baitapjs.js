@@ -101,32 +101,55 @@
  * - getHeight: trả về chiều cao
  * - getArea: trả về diện tích
  */
-var rectangle = { 
-  width: 5, 
-  height : 10, 
-  area = (width * height),
-    getWidth : function () {
-      console.log("chiều rộng là: " + this.width)
-    },
-    getHeight : function () {
-      console.log("chiều cao là: " + this.height)
-    },
-    getArea : function () {
-      //return (this.width * this.height);
-      console.log("diện tích là: " + this.area)
-    },
+// var rectangle = { 
+//   width: 5, 
+//   height : 10, 
+//   area = (width * height),
+//     getWidth : function () {
+//       console.log("chiều rộng là: " + this.width)
+//     },
+//     getHeight : function () {
+//       console.log("chiều cao là: " + this.height)
+//     },
+//     getArea : function () {
+//       //return (this.width * this.height);
+//       console.log("diện tích là: " + this.area)
+//     },
+// };
+// rectangle.getWidth()
+// rectangle.getHeight()
+// rectangle.getArea()
+
+// 10 – Các phép so sánh
+
+// Ví dụ:
+
+var a = [1, 2];//[1, 2];
+var b = [1, 2];//[1, 2];
+console.log(a === b);
+// Chạy chương trình và tìm hiểu vì sao kết quả lại là false mặc dù giá trị của 2 array có vẻ giống nhau. Viết câu trả lời ở dưới đây.
+// === vừa so sánh giá trị vừa so sánh kiểu dữ liệu
+// Ví dụ:
+
+var a = {
+  foo: 3
 };
-rectangle.getWidth()
-rectangle.getHeight()
-rectangle.getArea()
-//  const teo = {
-//       name:"nguyễn văn tèo",
-//       age:10,
-//       showInfo : function(){
-//           console.log("ten: " + this.name + " , tuoi:" + this.age)
-//       }
-//   }
-//   teo.showInfo()
+
+var b = {
+  foo: 3
+};
+
+console.log(a = b);
+// // Chạy chương trình và tìm hiểu vì sao kết quả lại là false mặc dù giá trị của 2 object có vẻ giống nhau. Viết câu trả lời ở dưới đây.
+
+// Ví dụ : 
+
+// var x = '1000';
+// var y = '200';
+
+// console.log(x > y);
+// Chạy chương trình và tìm hiểu vì sao kết quả lại là false mặc dù 1000 trông có vẻ lớn hơn 200. Viết câu trả lời ở dưới đây.
+// so sánh kiểu biến trước, giá trị sau: kiểu biến đều là string, nên k so sánh giá trị => kết quả trả về là false
 // function kiemtrasoNguyento(number) {
 //     let count= 0
 //     if(number<2){
