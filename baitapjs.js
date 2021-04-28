@@ -277,7 +277,43 @@
  * Sử dụng vòng lặp for...in để in ra tất cả các key trong object sau, in ra cả các key của các nested object (object con lồng bên trong object lớn)
  * Gợi ý: đây là bài tập khó, bạn nên tìm hiểu về recursive trước
  */
- var apartment = {
+//  var apartment = {
+//     bedroom: 
+//     {
+//       area: 20,
+//       bed: 
+//         {
+//          type: 'twin-bed',
+//          price: 100
+//         }
+//     }
+//   };
+//   function getkey(object){
+//       for (const key in object) {
+//           console.log(key);
+//           for (const keybedroom in object[key]) {
+//               console.log(keybedroom);
+//               for (const keybed in object[key][keybedroom]) {
+//                   console.log(keybed);
+//                   }
+//               }
+                  
+//         }
+//     }
+//     getkey(apartment)
+
+   /**
+   * Kết quả mong muốn:
+   * bedroom
+   * area
+   * bed
+   * type
+   * price
+   * Chú ý: không cần hiển thị ra đúng thứ tự như trên
+   */
+
+ // cách 2 
+var apartment = {
     bedroom: 
     {
       area: 20,
@@ -288,54 +324,14 @@
         }
     }
   };
-  function getkey(object){
-      for (const key in object) {
-          console.log(key);
-          for (const keybedroom in object[key]) {
-              console.log(keybedroom);
-              for (const keybed in object[key][keybedroom]) {
-                  console.log(keybed);
-                  }
-              }
-                  
-        }
-    }
-    getkey(apartment)
-//   function getkey(object){
-//       for (const keymain in object) {
-//           console.log(keymain) //keymain: bedroom
-//           for(const keybedroom in object[keymain]){
-//               console.log(keybedroom) // key_bedroom: area , bed
-//           }
-//           for (const keybed in object[keymain][keybedroom])
-//           {
-//             console.log(keybed)
-//         }
-//           }
-//       }
-//     getkey(apartment)
-   /**
-   * Kết quả mong muốn:
-   * bedroom
-   * area
-   * bed
-   * type
-   * price
-   * Chú ý: không cần hiển thị ra đúng thứ tự như trên
-   */
-//     function getkey(object){
-//       for(const key in object){
-//           console.log(key);
-//           for (const keyBedroom in object[key]) {
-//               console.log(keyBedroom)
-//               for (const keyBed in object[key][keyBedroom]){
-//                   console.log(keyBed)
-//               }
-                   
-//               }
-//           }
-//       }
-  
-  
-//   getkey(apartment)
-  
+
+ function getkey(object){
+     for (const key in object) {
+         console.log(key)
+         if (typeof object[key]=== 'object') {
+            getkey(object[key])
+             
+         }
+     }
+ } 
+ getkey(apartment)
