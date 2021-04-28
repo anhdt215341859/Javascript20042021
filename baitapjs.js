@@ -254,12 +254,23 @@
  * Sử dụng vòng lặp for...of để tính tích của các phần tử trong một array gồm các số
  */
 
-function multiply(arr) {
-    let mod = 1;
-    for( let x of arr ) {
-        mod *= x;
-    }
-    return mod;
-}
+// function multiply(arr) {
+//     let mod = 1;
+//     for( let x of arr ) {
+//         mod *= x;
+//     }
+//     return mod;
+// }
+// console.log(multiply([2, 3, 4])); // expect: 24
 
-console.log(multiply([2, 3, 4])); // expect: 24
+// for in
+ const arrNames = ["ti", "suu", "dan"]
+ let meo = {
+    name : 'do tien anh',
+    age: 24
+ }
+
+ for (let key in meo) {
+     console.log(key);
+     }
+
