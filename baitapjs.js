@@ -313,25 +313,36 @@
    */
 
  // cách 2 
-var apartment = {
-    bedroom: 
-    {
-      area: 20,
-      bed: 
-        {
-         type: 'twin-bed',
-         price: 100
-        }
-    }
-  };
+// var apartment = {
+//     bedroom: 
+//     {
+//       area: 20,
+//       bed: 
+//         {
+//          type: 'twin-bed',
+//          price: 100
+//         }
+//     }
+//   };
 
- function getkey(object){
-     for (const key in object) {
-         console.log(key)
-         if (typeof object[key]=== 'object') {
-            getkey(object[key])
+//  function getkey(object){
+//      for (const key in object) {
+//          console.log(key)
+//          if (typeof object[key]=== 'object') {
+//             getkey(object[key])
              
-         }
-     }
- } 
- getkey(apartment)
+//          }
+//      }
+//  } 
+//  getkey(apartment)
+
+// array method
+
+// Ví dụ 
+// remove n giá trị cuối cùng
+
+function removeEnd(arr,n){
+        arr.splice(arr.length - n, n)
+        console.log(arr)
+}
+removeEnd([1,2,3,4,5,6,7,8],4)
