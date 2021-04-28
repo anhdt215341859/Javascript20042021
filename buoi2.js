@@ -10,7 +10,7 @@
  */
 
 //     function multiply(arr){ 
-//     if(Array.isArray(arr))
+//     if(Array.isArray(arr)) // kiểm tra arr có phải là mảng hay không 
 //     {
 //         let mod = 1;
 //         for( let x of arr ) 
@@ -28,15 +28,15 @@
 // console.log(multiply([2, 3, 4])); // expect: 24
 
 // for in
-//  const arrNames = ["ti","suu", "dan"]
-//  const teo= {
-//      name="teo",
-//      age= 24
-//  }
+ const arrNames = ["ti","suu", "dan"]
+ let teo = {
+     name : 'tienanh',
+     age : 24
+ }
 
-//  for (const key in teo) {
-//      console.log(key)
-//      }
+ for (const key in teo) {
+     console.log(key);
+     }
     
 
 /**
@@ -144,20 +144,20 @@
  * - Lặp qua từng phần tử trong array, với mỗi phần tử, gọi hàm callback và truyền vào phần tử đó, được kết quả bao nhiêu thì push vào array khai báo ở trên
  * - Trả về result array
  */
- function transform(numbers, callback) {
-    const neeArr=[]
-    for (const value of numbers){
-        neeArr.push(callback(value))
-    } 
-    return neeArr
-    }
+//  function transform(numbers, callback) {
+//     const neeArr=[]
+//     for (const value of numbers){
+//         neeArr.push(callback(value))
+//     } 
+//     return neeArr
+//     }
     
-    function double(num) {
-      return num * 2;
-    }
+//     function double(num) {
+//       return num * 2;
+//     }
     
-    var output = transform([2, 4, 6], double);
-    console.log(output);
+//     var output = transform([2, 4, 6], double);
+//     console.log(output);
     // Expect: [4, 8, 12]
     
     // 15 – Hàm map, 
@@ -165,13 +165,13 @@
     // khi sự thay đổi đc thực hiện, sẽ tạo ra mảng mới chứa mảng thay đổi
 //Ví dụ
 
-const arrNumbers = [1, 2, 3, 4, 5]
+// const arrNumbers = [1, 2, 3, 4, 5]
 
-const newArrNumbers = arrNumbers.map(function(number, index) {
-    console.log(number)
-    return number
-})
-consloe.log(newArrNumbers)
+// const newArrNumbers = arrNumbers.map(function(number, index) {
+//     console.log(number)
+//     return number
+// })
+// console.log(newArrNumbers)
 /**
  * 1. Viết hàm tripple nhận vào 1 số và trả về số đó nhân 3
  * 2. Sử dụng map method và hàm tripple để nhân 3 các phần tử trong mảng dưới đây
