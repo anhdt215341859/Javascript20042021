@@ -77,17 +77,23 @@
 
     // ví dụ
     // trả về {a :3, b:2 , c:1}
-    function countOccurrences(arr) {
-        const object = arr.reduce(function(accumulator, currentValue){
-            if (currentValue in accumulator){
-                accumulator[currentValue]++;
-            }else {
-                    accumulator[currentValue] = 1
-                }
-            return accumulator
-        },{})
-        console.log(object)
+    // function countOccurrences(arr) {
+    //     const object = arr.reduce(function(accumulator, currentValue){
+    //         if (currentValue in accumulator){
+    //             accumulator[currentValue]++;
+    //         }else {
+    //                 accumulator[currentValue] = 1
+    //             }
+    //         return accumulator
+    //     },{})
+    //     console.log(object)
 
-    }
-    countOccurrences(["a", "b", "c", "b", "a", "a"]);
+    // }
+    // countOccurrences(["a", "b", "c", "b", "a", "a"]);
     
+
+    //16 hàm sort
+
+    const arrNums = [1,10, 12,11,8,7,14] // xuất ra [1,10.11,12,14,7,8]
+    arrNums.sort()
+    console.log(arrNums.sort())
