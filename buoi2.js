@@ -191,11 +191,6 @@
 // conslose.log(newarr)
  
 // Make an array of strings of the names
-function namesOnly(arr) {
-  var fullname = [item.firstname,item.lastname].join(" ");
-  return fullname;
-   
-  }
 
 namesOnly([
   {
