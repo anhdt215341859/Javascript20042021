@@ -406,16 +406,47 @@
 //     console.log(output);
     // Expect: [4, 8, 12]
 
-    function mod (num){
-      return num * 2;
-    }
+  //   function mod (num){
+  //     return num * 2;
+  //   }
 
-    function double (arr, callback) {
-        let total = []
-        for (const x of arr) {
-          total.push( callback( x ) );
-        }
-        return total;
-    }
-  var output = double ([1,2,3,4, 5], mod)
-    console.log(output)
+  //   function double (arr, callback) {
+  //       let total = []
+  //       for (const x of arr) {
+  //         total.push( callback( x ) );
+  //       }
+  //       return total;
+  //   }
+  // var output = double ([1,2,3,4, 5], mod)
+  //   console.log(output)
+
+      // 15 – Hàm map, 
+    //thay đổi các giá trị phần tử trong mảng, k thay đổi kích thước trong mảng
+    // khi sự thay đổi đc thực hiện, sẽ tạo ra mảng mới chứa mảng thay đổi
+//Ví dụ
+
+// const arrNumbers = [1, 2, 3, 4, 5]
+
+// //syntax: array.map(function(currentValue, index, arr), thisValue)
+// const newArrNumbers = arrNumbers.map(function(number, index) {
+//     console.log(number)
+//     return number
+// })
+// console.log(newArrNumbers)
+
+/**
+ * 1. Viết hàm tripple nhận vào 1 số và trả về số đó nhân 3
+ * 2. Sử dụng map method và hàm tripple để nhân 3 các phần tử trong mảng dưới đây
+ */
+// Khai báo tripple function ở đây
+var arr =[1, 2, 3, 4, 5]
+function tripple (num){
+  return num*3;
+}
+const newarr = arr.map(tripple(number, index){
+  return number
+  console.log(number)
+})
+
+
+conslose.log(newarr)

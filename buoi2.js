@@ -124,6 +124,7 @@
 // }
 
 // console.log(first([1, 2, 3, 4, 5,6, 7, 8, 9], 7)); // expect [1, 2]
+
 // 13 higher order function
 
 // function nhan2(number){
@@ -182,3 +183,47 @@
 
 // var numbers = [10, 5, 8];
 // Gợi ý: numbers.map... (tự viết tiếpe
+// var arr =[1, 2, 3, 4, 5]
+// function tripple (num){
+//   return num*3;
+// }
+// const newarr = arr.map(tripple)
+// conslose.log(newarr)
+ 
+// Make an array of strings of the names
+function namesOnly(arr) {
+  var fullname = [item.firstname,item.lastname].join(" ");
+  return fullname;
+   
+  }
+
+namesOnly([
+  {
+    name: "Angelina Jolie",
+    age: 80
+  },
+  {
+    name: "Eric Jones",
+    age: 2
+  },
+  {
+    name: "Paris Hilton",
+    age: 5
+  },
+  {
+    name: "Kayne West",
+    age: 16
+  },
+  {
+    name: "Bob Ziroll",
+    age: 100
+  }
+])
+
+// function getName(item) {
+//   var fullname = [item.firstname,item.lastname].join(" ");
+//   return fullname;
+// }
+
+// function myFunction() 
+// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
