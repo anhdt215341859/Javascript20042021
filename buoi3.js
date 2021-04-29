@@ -59,18 +59,35 @@
 // console.log(newArrNums)
 
 // ví dụ 2 
-const arrPerson =[
-        {id:1, name: 'tèo', age: 20},
-        {id:2, name: 'tủn', age: 25},
-        {id:3, name: 'hoa', age: 22},
-        {id:4, name: 'tuấn', age: 21},
-        {id:5, name: 'lan', age: 26},
-]
-const newArrPerson = arrPerson.reduce(function(accumulator, currentValue){
-        if(currentValue.age<25){
-            accumulator.push(currentValue.name);
-        }
-        return accumulator
-},[])
-console.log(newArrPerson)
+// const arrPerson =[
+//         {id:1, name: 'tèo', age: 20},
+//         {id:2, name: 'tủn', age: 25},
+//         {id:3, name: 'hoa', age: 22},
+//         {id:4, name: 'tuấn', age: 21},
+//         {id:5, name: 'lan', age: 26},
+// ]
+// const newArrPerson = arrPerson.reduce(function(accumulator, currentValue){
+//         if(currentValue.age<25){
+//             accumulator.push(currentValue.name);
+//         }
+//         return accumulator
+// },[])
+// console.log(newArrPerson)
     //    hàm reduce chỉ lưu biến tíhc luỹ, currentValue chỉ để check điều kiện
+
+    // ví dụ
+    // trả về {a :3, b:2 , c:1}
+    function countOccurrences(arr) {
+        const object = arr.reduce(function(accumulator, currentValue){
+            if (currentValue in accumulator){
+                accumulator[currentValue]++;
+            }else {
+                    accumulator[currentValue] = 1
+                }
+            return accumulator
+        },{})
+        console.log(object)
+
+    }
+    countOccurrences(["a", "b", "c", "b", "a", "a"]);
+    
