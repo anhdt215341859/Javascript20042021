@@ -43,17 +43,34 @@
 // }
 
 // 16 hàm reduce (gộp (+_*/))
-const arrNums = [1, 2, 3, 4, 5]
-// reduce có hai tham số, muốn trả về kiểu dữ liệu gì thì khai báo tham số thứ 2 (thuộc kiểu dữ liệu trả về)
-const newArrNums = arrNums.reduce(function(accumulator, currentValue){
-    return accumulator + currentValue
-//         lần 1: 
-//  accumulator : 0 (value) - biến tích luỹ
-//    currentValue: 1 (value)
-// return 5
-// lần 2: 
-// accumulator : 5 (value)
-// currentValue: 2 (value)
-// return 7
-},0)
-console.log(newArrNums)
+// const arrNums = [1, 2, 3, 4, 5]
+// // reduce có hai tham số, muốn trả về kiểu dữ liệu gì thì khai báo tham số thứ 2 (thuộc kiểu dữ liệu trả về)
+// const newArrNums = arrNums.reduce(function(accumulator, currentValue){
+//     return accumulator + currentValue
+// //         lần 1: 
+// //  accumulator : 0 (value) - biến tích luỹ
+// //    currentValue: 1 (value)
+// // return 5
+// // lần 2: 
+// // accumulator : 5 (value)
+// // currentValue: 2 (value)
+// // return 7
+// },0)
+// console.log(newArrNums)
+
+// ví dụ 2 
+const arrPerson =[
+        {id:1, name: 'tèo', age: 20},
+        {id:2, name: 'tủn', age: 25},
+        {id:3, name: 'hoa', age: 22},
+        {id:4, name: 'tuấn', age: 21},
+        {id:5, name: 'lan', age: 26},
+]
+const newArrPerson = arrPerson.reduce(function(accumulator, currentValue){
+        if(currentValue.age<25){
+            accumulator.push(currentValue.name);
+        }
+        return accumulator
+},[])
+console.log(newArrPerson)
+    //    hàm reduce chỉ lưu biến tíhc luỹ, currentValue chỉ để check điều kiện
