@@ -371,14 +371,51 @@
 // console.log(tinhTong([1,2],nhan2))
 
 //**
-function nhan2(number){
-  return number*2
-}
-function bieuthuc(arr, funct){
-  add = 0;
-  for (const x of arr) {
-    add+=x;
-  }
-  return funct(add)
-}
-console.log(bieuthuc([1,2,3,4,5], nhan2))
+// function nhan2(number){
+//   return number*2
+// }
+// function bieuthuc(arr, funct){
+//   add = 0;
+//   for (const x of arr) {
+//     add+=x;
+//   }
+//   return funct(add)
+// }
+// console.log(bieuthuc([1,2,3,4,5], nhan2))
+/**
+ * 1. Viết hàm transform nhận vào 1 array gồm các số và 1 function callback. Nội dung của hàm bao gồm:
+ * - Khai báo 1 biến result có giá trị là 1 empty array
+ * - Lặp qua từng phần tử trong array, với mỗi phần tử, gọi hàm callback và truyền vào phần tử đó, được kết quả bao nhiêu thì push vào array khai báo ở trên
+ * - Trả về result array
+ */
+//  function double(num) {
+//   return num * 2;
+// } 
+
+// function transform(numbers, callback) {
+//     const neeArr=[]
+//     for (const value of numbers){ // lấy từng phần tử trong mảng number ra
+//         neeArr.push(callback(value)) // truyền mảng vừa tạo vào function call back (double) rồi lấy kết quả truyền vào lại hàm neeArr (đang là hàm rỗng)
+//     } 
+//     return neeArr // trả ra mảng mới
+//     }
+    
+  
+    
+//     var output = transform([2, 4, 6], double);
+//     console.log(output);
+    // Expect: [4, 8, 12]
+
+    function mod (num){
+      return num * 2;
+    }
+
+    function double (arr, callback) {
+        let total = []
+        for (const x of arr) {
+          total.push( callback( x ) );
+        }
+        return total;
+    }
+  var output = double ([1,2,3,4, 5], mod)
+    console.log(output)
