@@ -96,4 +96,6 @@
 
     const arrNums = [1,10, 12,11,8,7,14] // xuất ra [1,10.11,12,14,7,8]
     arrNums.sort()
-    console.log(arrNums.sort())
+    console.log(arrNums.sort(function (a, b){
+        return a - b;
+    }))
