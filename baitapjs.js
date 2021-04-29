@@ -350,7 +350,35 @@
 
 //Viết hàm JavaScript để lấy phần tử đầu tiên của mảng. Truyền tham số 'n' sẽ trả về các phần tử 'n' đầu tiên của mảng
 
-function first(arr, n) {
-        return arr.slice(0,n);
+// function first(arr, n) {
+//         return arr.slice(0,n);
+// }
+// console.log(first([1,2,3,4,5,6,7,8], 2)); // expect [1, 2]
+
+// 13 higher order function
+// cộng các phần tử trong mảng rồi nhân kết quả với 2 dùng higher order function
+
+// function nhan2(number){
+//     return number*2
+// }
+// function tinhTong(arr, func){
+//     let result = 0
+//     for (const value of arr){
+//         result += value
+//     }
+//     return func(result)
+// }
+// console.log(tinhTong([1,2],nhan2))
+
+//**
+function nhan2(number){
+  return number*2
 }
-console.log(first([1,2,3,4,5,6,7,8], 2)); // expect [1, 2]
+function bieuthuc(arr, funct){
+  add = 0;
+  for (const x of arr) {
+    add+=x;
+  }
+  return funct(add)
+}
+console.log(bieuthuc([1,2,3,4,5], nhan2))

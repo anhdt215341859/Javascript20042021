@@ -28,15 +28,15 @@
 // console.log(multiply([2, 3, 4])); // expect: 24
 
 // for in
- const arrNames = ["ti","suu", "dan"]
- let teo = {
-     name : 'tienanh',
-     age : 24
- }
+//  const arrNames = ["ti","suu", "dan"]
+//  let teo = {
+//      name : 'tienanh',
+//      age : 24
+//  }
 
- for (const key in teo) {
-     console.log(key);
-     }
+//  for (const key in teo) {
+//      console.log(key);
+//      }
     
 
 /**
