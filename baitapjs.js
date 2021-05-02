@@ -453,32 +453,73 @@
 //   //const namearr = arr.map(tripple)
 // }
 
-var arrPerson = [
+// var arrPerson = [
+//   {
+//     name: "Angelina Jolie",
+//     age: 80
+//   },
+//   {
+//     name: "Eric Jones",
+//     age: 2
+//   },
+//   {
+//     name: "Paris Hilton",
+//     age: 5
+//   },
+//   {
+//     name: "Kayne West",
+//     age: 16
+//   },
+//   {
+//     name: "Bob Ziroll",
+//     age: 100
+//   }
+// ];
+// // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+// function getNamesOnly(item) {
+//   var namesOnly = [item.name].join(" ");
+//   return namesOnly;}
+// //var name =arrPerson.map(getNamesOnly)
+// //console.log(name);
+// console.log(arrPerson.map(getNamesOnly));
+
+
+// ví dụ
+// viết hàm xuất diện tích với dữ liệu có trong mảng
+
+var arrayHeightWidth = ([
   {
-    name: "Angelina Jolie",
-    age: 80
+    witdh: 4,
+    height : 6
+  },
+   {
+    witdh: 5,
+    height : 7
   },
   {
-    name: "Eric Jones",
-    age: 2
+    witdh: 1,
+    height : 3
   },
   {
-    name: "Paris Hilton",
-    age: 5
+    witdh: 5,
+    height : 10
   },
   {
-    name: "Kayne West",
-    age: 16
-  },
-  {
-    name: "Bob Ziroll",
-    age: 100
+    witdh: 10,
+    height : 10
   }
-];
-// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
-function getNamesOnly(item) {
-  var namesOnly = [item.name].join(" ");
-  return namesOnly;}
-//var name =arrPerson.map(getNamesOnly)
-//console.log(name);
-console.log(arrPerson.map(getNamesOnly));
+]) 
+
+function renderAcreage(arr) {
+  var acreage = arr.witdh * arr.height;
+  return acreage;
+}
+
+console.log(arrayHeightWidth.map(renderAcreage) )
+// function getNamesOnly(item) {
+//   var namesOnly = [item.name].join(" ");
+//   return namesOnly;}
+// //var name =arrPerson.map(getNamesOnly)
+// //console.log(name);
+// console.log(arrPerson.map(getNamesOnly));
+
