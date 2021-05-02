@@ -439,11 +439,46 @@
  * 2. Sử dụng map method và hàm tripple để nhân 3 các phần tử trong mảng dưới đây
  */
 // Khai báo tripple function ở đây
-var arr =[1, 2, 3, 4, 5]
-function tripple (num){
-  return num*3;
+// var arr =[1, 2, 3, 4, 5]
+// function tripple (num){
+//   return num*3;
   
-}
-const newarr = arr.map(tripple)
+// }
+// const newarr = arr.map(tripple)
+// console.log(newarr)
 
-console.log(newarr)
+// ví dụ map method 2
+// Make an array of strings of the names
+// function namesOnly(arr) {
+//   //const namearr = arr.map(tripple)
+// }
+
+var arrPerson = [
+  {
+    name: "Angelina Jolie",
+    age: 80
+  },
+  {
+    name: "Eric Jones",
+    age: 2
+  },
+  {
+    name: "Paris Hilton",
+    age: 5
+  },
+  {
+    name: "Kayne West",
+    age: 16
+  },
+  {
+    name: "Bob Ziroll",
+    age: 100
+  }
+];
+// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+function getNamesOnly(item) {
+  var namesOnly = [item.name].join(" ");
+  return namesOnly;}
+//var name =arrPerson.map(getNamesOnly)
+//console.log(name);
+console.log(arrPerson.map(getNamesOnly));
