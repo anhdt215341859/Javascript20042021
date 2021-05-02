@@ -520,8 +520,17 @@
 // Ví dụ:
 
 // Cho một mảng các số, trả về một mảng mới chỉ có các số từ 5 trở lên
-var arr = [1,2,3,4,5,6,7,8,9,10];
-function fiveAndGreaterOnly(num) {
-		return num > 5;
+// var arr = [1,2,3,4,5,6,7,4,9,10];
+// function fiveAndGreaterOnly(num) {
+// 		return num > 5;
+// }
+// console.log(arr.filter(fiveAndGreaterOnly))
+
+
+// Ví dụ:
+// Cho một mảng số, trả về một mảng mới chỉ bao gồm các số chẵn
+var arr= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+function evensOnly(num) {
+	return num%2==0
 }
-console.log(arr.filter(fiveAndGreaterOnly))
+console.log(arr.filter(evensOnly))
