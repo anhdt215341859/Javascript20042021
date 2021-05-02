@@ -487,39 +487,41 @@
 // ví dụ
 // viết hàm xuất diện tích với dữ liệu có trong mảng
 
-var arrayHeightWidth = ([
-  {
-    witdh: 4,
-    height : 6
-  },
-   {
-    witdh: 5,
-    height : 7
-  },
-  {
-    witdh: 1,
-    height : 3
-  },
-  {
-    witdh: 5,
-    height : 10
-  },
-  {
-    witdh: 10,
-    height : 10
-  }
-]) 
+// var arrayHeightWidth = ([
+//   {
+//     witdh: 4,
+//     height : 6
+//   },
+//    {
+//     witdh: 5,
+//     height : 7
+//   },
+//   {
+//     witdh: 1,
+//     height : 3
+//   },
+//   {
+//     witdh: 5,
+//     height : 10
+//   },
+//   {
+//     witdh: 10,
+//     height : 10
+//   }
+// ]) 
 
-function renderAcreage(arr) {
-  var acreage = arr.witdh * arr.height;
-  return acreage;
+// function renderAcreage(arr) {
+//   var acreage = arr.witdh * arr.height;
+//   return acreage;
+// }
+// console.log(arrayHeightWidth.map(renderAcreage))
+
+// 16 - hàm fillter 
+// Ví dụ:
+
+// Cho một mảng các số, trả về một mảng mới chỉ có các số từ 5 trở lên
+var arr = [1,2,3,4,5,6,7,8,9,10];
+function fiveAndGreaterOnly(num) {
+		return num > 5;
 }
-
-console.log(arrayHeightWidth.map(renderAcreage) )
-// function getNamesOnly(item) {
-//   var namesOnly = [item.name].join(" ");
-//   return namesOnly;}
-// //var name =arrPerson.map(getNamesOnly)
-// //console.log(name);
-// console.log(arrPerson.map(getNamesOnly));
-
+console.log(arr.filter(fiveAndGreaterOnly))
