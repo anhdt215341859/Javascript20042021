@@ -442,11 +442,8 @@
 var arr =[1, 2, 3, 4, 5]
 function tripple (num){
   return num*3;
+  
 }
-const newarr = arr.map(tripple(number, index){
-  return number
-  console.log(number)
-})
+const newarr = arr.map(tripple)
 
-
-conslose.log(newarr)
+console.log(newarr)

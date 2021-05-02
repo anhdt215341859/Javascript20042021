@@ -94,8 +94,41 @@
 
     //16 hàm sort
 
-    const arrNums = [1,10, 12,11,8,7,14] // xuất ra [1,10.11,12,14,7,8]
-    arrNums.sort()
-    console.log(arrNums.sort(function (a, b){
-        return a - b;
-    }))
+    // const arrNums = [1,10, 12,11,8,7,14] // xuất ra [1,10.11,12,14,7,8]
+    // arrNums.sort()
+    // console.log(arrNums.sort(function (a, b){
+    //     return a - b;
+    // }))
+
+    // const arrChar = ['a','A','b','B','c','C']
+    // console.log(arrChar.sort())
+
+    // 18 function scope (): các gía trị ưu tiên lấy trong () trước, không có mới tìm bên ngoài
+
+    // let a = 5
+    // function setValue(){
+    //     let a = 10
+    //     console.log(a)//10
+    // }
+    // setValue(10)
+    // console.log(a) //5
+
+    // 19:arrow function
+
+//     const arrNums = [1, 2, 3, 4, 5]
+// // kiểu cũ
+//     // const newArr = arrNums.map(function(number){
+//     //     return number *2 
+//     // })
+
+//     // kiểu arrow function
+//     const newArr2 = arrNums.map((number) => {
+//         return number * 2
+//     })
+// console.log ()
+
+
+const teo ={
+    name : "teo",
+    age: 20,
+}
