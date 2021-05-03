@@ -537,8 +537,8 @@
 // Viết hàm trả về số chẵn đầu tiên trong mảng sử dụng find method
 // Nếu không tìm thấy số chẵn nào thì trả về undefined
 
-// var arr = [1, 3,5, 7, 9];
-// // const filterEven = arr.filter(function(number, index, arr), thisValue)
+// var arr = [1, 2 ,5, 7, 9];
+// //const filterEven = arr.filter(function(number, index, arr), thisValue)
 
 // function findFirstEvenNumber(array) {
 //   for (var i = 0; i < arr.length; i++) //  i là biến đếm trong mảng (số thứ tưj của phần tử trong mảng)
@@ -550,3 +550,53 @@
 //     else{}
 // }
 // console.log(findFirstEvenNumber(arr))
+
+
+//Ví dụ:
+/**
+ * viết hàm tìm số chia hết cho x đầu tiên có trong mảng
+ *  @params {array} array - Mảng các chữ số
+ * @params {number} x - Số bị chia
+ * Nếu không có trả về undefined
+ * Example: 
+ * findDivisibleNum([1, 3, 4], 2) => 4
+ */
+
+// var arr = [1, 5,3, 9, 7,3];
+// const x = 3
+// // const filterEven = arr.filter(function(number,arr)
+// function filter(array){
+//   for(let i =0;i <= arr.length;i++){
+//     if (arr[i]% x ==0){
+//       return arr[i];
+//       exit;
+//     }
+//     else {}
+//   }
+// }
+// console.log(filter(arr))
+const array = [12, 6,5,3, 9, 7,3];
+const x =3; 
+let newarr=array.filter(function(number){
+    if (number%x == 0){return true;
+    exit;}
+    return false;
+ })
+ console.log(newarr.slice(0,1))
+
+//console.log(result);
+
+//   if (number % x === 0){
+//     return true;
+//         }
+//       return false ; // k đưa phần tử nào vào 
+// console.log(filterEven)
+// const newarr = arr_name.filter(function(name){
+//     if (name.length<=3){
+//         return true;
+//     }
+//     return false ; // k đưa phần tử nào vào 
+    
+// })
+// console.log(newarr)
+  
