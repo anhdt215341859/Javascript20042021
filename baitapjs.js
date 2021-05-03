@@ -526,11 +526,27 @@
 // }
 // console.log(arr.filter(fiveAndGreaterOnly))
 
-
 // Ví dụ:
 // Cho một mảng số, trả về một mảng mới chỉ bao gồm các số chẵn
-var arr= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-function evensOnly(num) {
-	return num%2==0
-}
-console.log(arr.filter(evensOnly))
+// var arr= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// function evensOnly(num) {
+// 	return num%2==0 // chia lấy dư
+// }
+// console.log(arr.filter(evensOnly))
+
+// Viết hàm trả về số chẵn đầu tiên trong mảng sử dụng find method
+// Nếu không tìm thấy số chẵn nào thì trả về undefined
+
+// var arr = [1, 3,5, 7, 9];
+// // const filterEven = arr.filter(function(number, index, arr), thisValue)
+
+// function findFirstEvenNumber(array) {
+//   for (var i = 0; i < arr.length; i++) //  i là biến đếm trong mảng (số thứ tưj của phần tử trong mảng)
+//   //let index = 0;
+// 		if(arr[i]%2 === 0){
+//       return arr[i];
+//       exit ;
+//     }
+//     else{}
+// }
+// console.log(findFirstEvenNumber(arr))
