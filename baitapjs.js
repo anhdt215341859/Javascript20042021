@@ -2,6 +2,12 @@
 // bài 1
 // khai báo biến
 // let x = 8
+// let x = 8
+let a =8
+
+
+
+
 // let y = 4
 // let a 
 // let b 
